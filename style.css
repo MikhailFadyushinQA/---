@@ -5,10 +5,10 @@ body {
 
 .intro {
     max-height: 100vh;
-    overflow: hidden;
     position: relative;
     background: url("sea.png") center no-repeat;
     background-size: cover;
+    overflow-x:hidden;
 }
 
 .intro:after {
@@ -34,6 +34,45 @@ body {
     z-index: 3;
 }
 
+.line {
+  position: relative;
+  top: -60px;
+  left: 20px;
+  color: #FFF8DC;
+}
+
+.video {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 56.25%;
+}
+
+.video__media {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.photo {
+   /* Параметры рамки */
+  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
+  object-fit: cover;
+  position: relative;
+  top: -50px;
+  left: 80px;
+}
+  /* Эффект наведения на картинку */
+.photo:hover {
+  border: 3px solid #E0FFFF;
+}
+ 
+.button {
+  position: relative;
+  top: 0px;
+  left:130px;
+}
+
 a {
   display: block;
   text-decoration:none;
@@ -48,7 +87,7 @@ a:link {
 }
 
 a:visited {
-  color: #999999;
+  color: #333399;
 }
 
 a:hover {
@@ -82,43 +121,4 @@ p {
   color: #FFF8DC;
 }
 
-.line {
-  position: relative;
-  top: -60px;
-  left: 20px;
-  color: #FFF8DC;
-}
 
-
-
-.video {
-    position: relative;
-    z-index: 1;
-    padding-bottom: 56.25%;
-}
-
-.video__media {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-.photo {
-   /* Параметры рамки */
-  box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
-  object-fit: cover;
-  position: relative;
-  top: -50px;
-  left: 80px;
-}
-  /* Эффект наведения на картинку */
-.photo:hover {
-  border: 3px solid #E0FFFF;
-}
- 
-.button {
-  position: relative;
-  top: 0px;
-  left:20px;
-}
