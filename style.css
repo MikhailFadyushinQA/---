@@ -5,10 +5,10 @@ body {
 
 .intro {
     max-height: 100vh;
+    overflow: hidden;
     position: relative;
     background: url("sea.png") center no-repeat;
     background-size: cover;
-    overflow-x:hidden;
 }
 
 .intro:after {
@@ -34,9 +34,55 @@ body {
     z-index: 3;
 }
 
+a {
+  display: block;
+  text-decoration:none;
+  margin-bottom: 1.2em;
+  position: relative;
+  top: -10px;
+  left:20px;
+}
+
+a:link {
+  color: #bf360c;
+}
+
+a:visited {
+  color: #3300cc;
+}
+
+a:hover {
+  color: #FFF8DC;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(1.5em);
+  border-bottom: 1px solid #bb5500;
+  width: 90px;
+}
+
+h1 {
+    font-size: 20px;
+    color: #FFF8DC;
+    position: relative;
+    top: -80px;
+    left: 100px;
+}
+
+p {
+  position: relative;
+  top: -20px;
+  left: 65px;
+  color: #FFF8DC;
+}
+
 .line {
   position: relative;
-  top: -60px;
+  top: -30px;
   left: 20px;
   color: #FFF8DC;
 }
@@ -55,70 +101,19 @@ body {
     left: 0;
 }
 .photo {
-   /* Параметры рамки */
   box-shadow: 0 4px 15px 0px rgba(0, 0, 0, 0.52);
   object-fit: cover;
   position: relative;
   top: -50px;
   left: 80px;
 }
-  /* Эффект наведения на картинку */
+  
 .photo:hover {
   border: 3px solid #E0FFFF;
 }
  
 .button {
   position: relative;
-  top: 0px;
+  top: 30px;
   left:130px;
 }
-
-a {
-  display: block;
-  text-decoration:none;
-  margin-bottom: 1.2em;
-  position: relative;
-  top: -30px;
-  left:20px;
-}
-
-a:link {
-  color: #FF4500;
-}
-
-a:visited {
-  color: #333399;
-}
-
-a:hover {
-  color: #FFF8DC;
-}
-
-
-  /* Этим свойством добавляем подчеркивание через создание псевдокласса */
-a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  transform: translateY(1.5em);
-  border-bottom: 1px solid #FF4500;
-  width: 90px;
-}
-
-h1 {
-    font-size: 20px;
-    color: #FFF8DC;
-    position: relative;
-    top: -50px;
-    left: 100px;
-}
-
-p {
-  position: relative;
-  top: -50px;
-  left: 65px;
-  color: #FFF8DC;
-}
-
-
